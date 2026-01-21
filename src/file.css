@@ -1,0 +1,167 @@
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.title_logo{
+     background: linear-gradient(#e763d1,#46c2d8,#faf178);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Trebuchet MS;
+}
+.all_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.back_ground{
+    background: linear-gradient(60deg ,#0c060c,#853cb6,#0e0320);
+    padding: 50px;
+    border-radius: 70px 0 70px 0;
+    width: 500px;
+}
+hr{
+   width: 100%;
+}
+.hr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 20px;
+}
+.hr h3{
+  flex-shrink: 0;
+}
+.icons{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 25px;
+   gap: 20px;
+}
+.icons a{
+    color: white;
+}
+.icons .icon_google{
+    background-color: rgb(231, 28, 28);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_twitter{
+    background-color: rgb(0, 162, 255);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_facebook{
+    background-color: rgb(45, 87, 165);
+    border-radius: 50% ;
+    padding: 10px;
+}
+.icons .icon_facebook:hover, .icons .icon_twitter:hover, .icons .icon_google:hover{
+    box-shadow: 0 0 10px white;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inp input{
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    padding: 0 35px 0 12px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    border-radius: 5px;
+    color: white;
+}
+.inp input::placeholder{
+    color: #ffffff9a;
+}
+.inp_password{
+    position: relative;
+}
+.inp_password .icon_eyeslash{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 15px;
+    color: rgb(98, 113, 129);
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+    color: aqua;
+}
+.link:hover{
+    text-decoration: underline;
+}
+.checkbox_link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox_label{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.checkbox_link input{
+    margin-top: 1px;
+    transform: scale(1.2);
+    cursor: pointer;
+    accent-color: rgb(49, 95, 219);
+}
+.btn{
+    margin-top: 30px;
+}
+.btn button{
+    width: 100%;
+    height: 45px;
+    cursor: pointer;
+    font-size: 17px;
+    background-color:rgb(231, 33, 66) ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+.btn button:hover{
+    background-color:rgb(240, 65, 88) ;
+}
+.link_register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+@media (max-width:760px){
+    .back_ground{
+        padding: 50px;
+        margin: 20px;
+    }
+}
+
+@media (max-width:460px){
+    .back_ground{
+        padding: 15px;
+        margin: 10px;
+    }
+    .checkbox_link{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+}
